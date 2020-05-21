@@ -24,7 +24,18 @@ var password = "";
 
 for (var i = 0; i < totalCharacters; i++) {
     password = password + i;
-    console.log(password);
+    if (useLowerCase){
+
+    }
+    if (useUpperCase){
+
+    }
+    if (useSymbols){
+
+    }
+    if (useNumbers) {
+        
+    }
 }
 
 // Write password to the #password input
