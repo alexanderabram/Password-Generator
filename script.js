@@ -23,7 +23,8 @@ console.log ("N: ", useNumbers);
 var password = "";
 
 for (var i = 0; i < totalCharacters; i++) {
-    console.log ("Index: ", i);
+    password = password + i;
+    console.log(password);
 }
 
 // Write password to the #password input
