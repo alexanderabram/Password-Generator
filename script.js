@@ -23,13 +23,13 @@ console.log ("N: ", useNumbers);
 var possibleCharacters = [];
 
 if (useLowerCase){
-    possibleCharacters.concat(typesOfCharacters.lowerCase.split(""));
+    possibleCharacters = possibleCharacters.concat(typesOfCharacters.lowerCase.split(""));
 }
 if (useUpperCase){
-    possibleCharacters.concat(typesOfCharacters.lowerCase.toUpperCase().split(""));
+    possibleCharacters = possibleCharacters.concat(typesOfCharacters.lowerCase.toUpperCase().split(""));
 }
 if (useSymbols){
-    possibleCharacters.concat(typesOfCharacters.specialCharacters.split(""));
+    possibleCharacters = possibleCharacters.concat(typesOfCharacters.specialCharacters.split(""));
 }
 if (useNumbers) {
     
