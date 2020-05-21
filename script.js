@@ -26,7 +26,7 @@ if (useLowerCase){
     possibleCharacters.push(typesOfCharacters.lowerCase);
 }
 if (useUpperCase){
-
+    possibleCharacters.push(typesOfCharacters.lowerCase,toUpperCase());
 }
 if (useSymbols){
 
