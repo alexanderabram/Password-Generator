@@ -20,6 +20,8 @@ console.log ("U: ", useUpperCase);
 console.log ("S: ", useSymbols);
 console.log ("N: ", useNumbers);
 
+var password = "";
+
 for (var i = 0; i < totalCharacters; i++) {
     console.log ("Index: ", i);
 }
