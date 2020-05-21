@@ -20,22 +20,26 @@ console.log ("U: ", useUpperCase);
 console.log ("S: ", useSymbols);
 console.log ("N: ", useNumbers);
 
+var possibleCharacters = [];
+
+if (useLowerCase){
+    possibleCharacters.push(typesOfCharacters.lowerCase);
+}
+if (useUpperCase){
+
+}
+if (useSymbols){
+
+}
+if (useNumbers) {
+    
+}
+
 var password = "";
 
 for (var i = 0; i < totalCharacters; i++) {
     password = password + i;
-    if (useLowerCase){
 
-    }
-    if (useUpperCase){
-
-    }
-    if (useSymbols){
-
-    }
-    if (useNumbers) {
-        
-    }
 }
 
 // Write password to the #password input
