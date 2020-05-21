@@ -26,10 +26,10 @@ if (useLowerCase){
     possibleCharacters.push(typesOfCharacters.lowerCase);
 }
 if (useUpperCase){
-    possibleCharacters.push(typesOfCharacters.lowerCase,toUpperCase());
+    possibleCharacters.push(typesOfCharacters.lowerCase.toUpperCase());
 }
 if (useSymbols){
-
+    possibleCharacters.push(typesOfCharacters.specialCharacters;
 }
 if (useNumbers) {
     
