@@ -15,7 +15,10 @@ var useUpperCase = confirm("Use Uppercase?");
 var useSymbols = confirm("Use Symbols?");
 var useNumbers = confrim("Use Numbers?");
 
-console.log ("L: "useLowerCase);
+console.log ("L: ", useLowerCase);
+console.log ("L: ", useLowerCase);
+console.log ("L: ", useLowerCase);
+console.log ("L: ", useLowerCase);
 
 // Write password to the #password input
 function writePassword() {
