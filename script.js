@@ -7,6 +7,7 @@ console.log(totalCharacters);
 
 var typesOfCharacters = {
     lowerCase: "abcdefghijklmnopqrstuvwxyz".split(""),
+    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
     specialCharacters: "!#$%&()*+,-./:;<=>?@[\]^_`{|}~".split(),
 }
 
@@ -26,14 +27,16 @@ if (useLowerCase){
     possibleCharacters.push(typesOfCharacters.lowerCase);
 }
 if (useUpperCase){
-    possibleCharacters.push(typesOfCharacters.lowerCase.toUpperCase());
+    possibleCharacters.push(typesOfCharacters.upperCase);
 }
 if (useSymbols){
-    possibleCharacters.push(typesOfCharacters.specialCharacters;
+    possibleCharacters.push(typesOfCharacters.specialCharacters);
 }
 if (useNumbers) {
     
 }
+
+console.log(possibleCharacters);
 
 var password = "";
 
