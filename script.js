@@ -6,9 +6,8 @@ var totalCharacters = parseInt(fromPrompt);
 console.log(totalCharacters);
 
 var typesOfCharacters = {
-    lowerCase: "abcdefghijklmnopqrstuvwxyz".split(""),
-    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-    specialCharacters: "!#$%&()*+,-./:;<=>?@[\]^_`{|}~".split(),
+    lowerCase: "abcdefghijklmnopqrstuvwxyz",
+    specialCharacters: "!#$%&()*+,-./:;<=>?@[\]^_`{|}~",
 }
 
 var useLowerCase = confirm("Use Lowercase?");
@@ -24,13 +23,13 @@ console.log ("N: ", useNumbers);
 var possibleCharacters = [];
 
 if (useLowerCase){
-    possibleCharacters.push(typesOfCharacters.lowerCase);
+    possibleCharacters.push(typesOfCharacters.lowerCase.split(""));
 }
 if (useUpperCase){
-    possibleCharacters.push(typesOfCharacters.upperCase);
+    possibleCharacters.push(typesOfCharacters.lowerCase.toUpperCase().split(""));
 }
 if (useSymbols){
-    possibleCharacters.push(typesOfCharacters.specialCharacters);
+    possibleCharacters.push(typesOfCharacters.specialCharacters.split(""));
 }
 if (useNumbers) {
     
