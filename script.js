@@ -20,6 +20,10 @@ console.log ("U: ", useUpperCase);
 console.log ("S: ", useSymbols);
 console.log ("N: ", useNumbers);
 
+for (var i = 0; i < totalCharacters; i++) {
+    console.log ("Index: ", i);
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
