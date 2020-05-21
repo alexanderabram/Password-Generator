@@ -13,7 +13,7 @@ var typesOfCharacters = {
 var useLowerCase = confirm("Use Lowercase?");
 var useUpperCase = confirm("Use Uppercase?");
 var useSymbols = confirm("Use Symbols?");
-var useNumbers = confrim("Use Numbers?");
+var useNumbers = confirm("Use Numbers?");
 
 console.log ("L: ", useLowerCase);
 console.log ("U: ", useUpperCase);
