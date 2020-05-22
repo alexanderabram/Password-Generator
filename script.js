@@ -32,7 +32,9 @@ if (useSymbols){
     possibleCharacters = possibleCharacters.concat(typesOfCharacters.specialCharacters.split(""));
 }
 if (useNumbers) {
-    
+   for (var i = 0; i < 10; i++) {
+    possibleCharacters.push(i);
+   } 
 }
 
 console.log(possibleCharacters);
