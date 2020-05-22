@@ -43,7 +43,7 @@ var password = "";
 
 for (var i = 0; i < totalCharacters; i++) {
     var position = Math.floor(Math.random() * possibleCharacters.length);
-    password = possibleCharacters[position];
+    password = password + possibleCharacters[position];
 }
 
 console.log(password);
