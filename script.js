@@ -42,7 +42,7 @@ console.log(possibleCharacters);
 var password = "";
 
 for (var i = 0; i < totalCharacters; i++) {
-    password = password + i;
+    password = Math.floor(Math.random() * possibleCharacters.length);
 
 }
 
