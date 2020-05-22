@@ -42,9 +42,11 @@ console.log(possibleCharacters);
 var password = "";
 
 for (var i = 0; i < totalCharacters; i++) {
-    password = Math.floor(Math.random() * possibleCharacters.length);
-
+    var position = Math.floor(Math.random() * possibleCharacters.length);
+    password = possibleCharacters[position];
 }
+
+console.log(password);
 
 // Write password to the #password input
 function writePassword() {
