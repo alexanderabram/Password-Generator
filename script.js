@@ -1,7 +1,11 @@
-// Assignment Code
+function generatePassword() {
+
 var generateBtn = document.querySelector("#generate");
 var fromPrompt = prompt("Select number 8 through 128");
 var totalCharacters = parseInt(fromPrompt);
+if (totalCharacters > 7 && totalCharacters < 129) {
+
+
 
 console.log(totalCharacters);
 
@@ -15,26 +19,21 @@ var useUpperCase = confirm("Use Uppercase?");
 var useSymbols = confirm("Use Symbols?");
 var useNumbers = confirm("Use Numbers?");
 
-console.log ("L: ", useLowerCase);
-console.log ("U: ", useUpperCase);
-console.log ("S: ", useSymbols);
-console.log ("N: ", useNumbers);
-
 var possibleCharacters = [];
 
-if (useLowerCase){
+if (useLowerCase) {
     possibleCharacters = possibleCharacters.concat(typesOfCharacters.lowerCase.split(""));
 }
-if (useUpperCase){
+if (useUpperCase) {
     possibleCharacters = possibleCharacters.concat(typesOfCharacters.lowerCase.toUpperCase().split(""));
 }
-if (useSymbols){
+if (useSymbols) {
     possibleCharacters = possibleCharacters.concat(typesOfCharacters.specialCharacters.split(""));
 }
 if (useNumbers) {
-   for (var i = 0; i < 10; i++) {
-    possibleCharacters.push(i);
-   } 
+    for (var i = 0; i < 10; i++) {
+        possibleCharacters.push(i);
+    }
 }
 
 console.log(possibleCharacters);
@@ -47,15 +46,12 @@ for (var i = 0; i < totalCharacters; i++) {
 }
 
 console.log(password);
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+return password;
+} else {
+    alert("Password must be between 8 and 128 characters...");
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+}
+document.getElementById("generate").addEventListener("click", function() {
+    var pText = document.getElementById("password");
+    pText.value = generatePassword();
+});
