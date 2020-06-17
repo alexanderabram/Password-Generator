@@ -8,6 +8,7 @@ Use the provided link to access the random password generator.
 https://alexanderabram.github.io/Password-Generator/
 
 ## Usage
+![image](https://user-images.githubusercontent.com/63982568/84958105-35bdda00-b0c2-11ea-9e64-5fca7a061a64.png)
 
 Click the red "Generate Password" button to initiate the first prompt.
 Prompt 1: Select a number between 8 and 128 to set password length.  
