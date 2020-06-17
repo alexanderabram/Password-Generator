@@ -4,7 +4,8 @@ A random password generator powered by user input via prompts.
 
 ## Installation
 
-Use the provided link to access the random password generator.
+Use the provided link to access the random password generator.  
+https://alexanderabram.github.io/Password-Generator/
 
 ## Usage
 
